@@ -1,6 +1,7 @@
 {
   "name": "lemonade",
   "version": "0.1.0",
+  "homepage": "https://pervezn.github.io/lemonade/",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.3.5",
