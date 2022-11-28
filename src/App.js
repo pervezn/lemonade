@@ -1,5 +1,5 @@
 import './App.css';
-import { Box, ChakraProvider, Heading, Text, Button, VStack } from '@chakra-ui/react'
+import { Box, ChakraProvider, Heading, Text, Button, Flex, extendTheme } from '@chakra-ui/react'
 import CardContainer from './components/Card'
 import React, {useState} from 'react';
 import TypeWriter from './components/TypeWriter';
@@ -9,7 +9,7 @@ function App() {
   const [content, setContent] = useState(<TypeWriter />)
 
   function handleNav(e) {
-    console.log("here")
+    // console.log("here")
     let target = e.target.innerText 
     setContentStr(target) 
     console.log(target)
@@ -21,18 +21,22 @@ function App() {
     }
   }
 
+
+
+
   return (
     <ChakraProvider>
       <div>
         <div style={styles.navBtnContainer} >
-        <Button style={styles.navBtn} variant='link' onClick={(e) => handleNav(e)}>Home</Button>
-        <Button style={styles.navBtn} variant='link' onClick={(e) => handleNav(e)}>Projects</Button>
-        <Button style={styles.navBtn} variant='link' onClick={(e) => handleNav(e)}>About</Button>
+          <Button style={styles.navBtn} variant='link' onClick={(e) => handleNav(e)}>Home</Button>
+          <Button style={styles.navBtn} variant='link' onClick={(e) => handleNav(e)}>Projects</Button>
+          <Button style={styles.navBtn} variant='link' onClick={(e) => handleNav(e)}>About</Button>
         </div>
-        <div style={contentStr === 'Projects' ? styles.headingProjects : styles.heading}>
+        <Flex style={contentStr === 'Projects' ? styles.headingProjects : styles.heading} >
           {content}
-        </div>
-        <div style={{paddingLeft: "12px", paddingRight: "12px"}}>
+        </Flex>
+        <div style={{padding: '100px' }}>
+          Social Medias
         </div>
       </div>
     </ChakraProvider>
@@ -44,16 +48,16 @@ export default App;
 
 const styles = {
   heading: {
-    display: "flex",
-    flex: "1 1 auto !important",
+    // display: "flex",
+    // flex: "1 1 auto !important",
     justifyContent: "center",
     alignItems: "center",
     width: "100vw",
     height: "100vh",
   },
   headingProjects: {
-    display: "flex",
-    flex: "1 1 auto !important",
+    // display: "flex",
+    // flex: "1 1 auto !important",
     justifyContent: "center",
     alignItems: "center",
     // width: "100vw",
