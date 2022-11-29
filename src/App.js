@@ -1,8 +1,10 @@
 import './App.css';
-import { Box, ChakraProvider, Heading, Text, Button, Flex, extendTheme } from '@chakra-ui/react'
+import {ChakraProvider, Button, Flex } from '@chakra-ui/react'
 import CardContainer from './components/Card'
 import React, {useState} from 'react';
 import TypeWriter from './components/TypeWriter';
+import SocialMedias from './components/SocialMedias';
+import About from './components/About';
 
 function App() {
   const [contentStr, setContentStr] = useState('')
@@ -19,10 +21,10 @@ function App() {
     if(target === 'Projects'){
       setContent(<CardContainer />)
     }
+    if(target === 'About'){
+      setContent(<About />)
+    }
   }
-
-
-
 
   return (
     <ChakraProvider>
@@ -35,9 +37,7 @@ function App() {
         <Flex style={contentStr === 'Projects' ? styles.headingProjects : styles.heading} >
           {content}
         </Flex>
-        <div style={{padding: '100px' }}>
-          Social Medias
-        </div>
+       <SocialMedias />
       </div>
     </ChakraProvider>
   );
@@ -69,5 +69,5 @@ const styles = {
     top: 0,
     right: 0,
     marginRight: '10px',
-  }
+  },
 }
