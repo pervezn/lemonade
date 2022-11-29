@@ -48,20 +48,14 @@ export default App;
 
 const styles = {
   heading: {
-    // display: "flex",
-    // flex: "1 1 auto !important",
     justifyContent: "center",
     alignItems: "center",
     width: "100vw",
     height: "100vh",
   },
   headingProjects: {
-    // display: "flex",
-    // flex: "1 1 auto !important",
     justifyContent: "center",
     alignItems: "center",
-    // width: "100vw",
-    // height: "100vh",
   },
   border: {
     color: "blue",
@@ -71,8 +65,6 @@ const styles = {
     margin: '10px',
   },
   navBtnContainer :{
-    // display: 'flex',
-    // justifyContent: 'end',
     position: 'absolute',
     top: 0,
     right: 0,
