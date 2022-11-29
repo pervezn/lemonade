@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import { Box, Heading, Text, Link, Flex,  } from '@chakra-ui/react'
+import { Box, Heading, Text, Flex} from '@chakra-ui/react'
+import Links from './Links';
 import data from "./data"
 import Pill from "./Pill"
 
@@ -35,15 +36,13 @@ const Card = ({project}) => {
         <Text fontSize={{ base: '12px', md: '14px', lg: '16px' }} style={{paddingBottom: "10px", paddingTop: "10px", color: "#767C7F"}}>{project.description}</Text>
         <hr />
         <div style={{paddingTop: "20px"}}>
-          <Flex>
+          <Flex shrink={1} wrap="wrap">
             {project.pills.map((pillText, key) => {
               return (
                 <Pill key={key} color={colors[pillMap[pillText]]}>{pillText}</Pill>
               )})}
           </Flex>
-          <Link href={project.githubLink} fontSize={{ base: '12px', md: '14px', lg: '16px' }} style={{display: "block"}}>Github</Link>
-          <Link href={project.websiteLink} fontSize={{ base: '12px', md: '14px', lg: '16px' }} style={{display: "block"}}>Demo</Link>
-          <Link href={project.blogLink} fontSize={{ base: '12px', md: '14px', lg: '16px' }}style={{display: "block"}} >Blog</Link>
+           <Links project={project}/>
         </div>
       </Box>
     )
@@ -81,5 +80,8 @@ const styles = {
   },
   hoverStyle: {
     boxShadow: '1px 2px 9px #bbbbbf',
+  },
+  icons: {
+    marginRight: '3px'
   }
 }
