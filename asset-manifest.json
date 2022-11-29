@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/lemonade/static/css/main.073c9b0a.css",
-    "main.js": "/lemonade/static/js/main.debe9fec.js",
+    "main.js": "/lemonade/static/js/main.ac42b88f.js",
     "static/js/787.82487b8b.chunk.js": "/lemonade/static/js/787.82487b8b.chunk.js",
     "index.html": "/lemonade/index.html",
     "main.073c9b0a.css.map": "/lemonade/static/css/main.073c9b0a.css.map",
-    "main.debe9fec.js.map": "/lemonade/static/js/main.debe9fec.js.map",
+    "main.ac42b88f.js.map": "/lemonade/static/js/main.ac42b88f.js.map",
     "787.82487b8b.chunk.js.map": "/lemonade/static/js/787.82487b8b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.debe9fec.js"
+    "static/js/main.ac42b88f.js"
   ]
 }
