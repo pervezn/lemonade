@@ -26,6 +26,19 @@ function App() {
     }
   }
 
+  function handleStyle(str) {
+    switch(str){
+      case 'Projects': 
+        console.log(str)
+        return styles.projectHeading
+      case 'About':
+        console.log(str)
+        return styles.aboutHeading
+      default:
+        return styles.homeHeading
+    }
+  }
+
   return (
     <ChakraProvider>
       <div>
@@ -34,7 +47,7 @@ function App() {
           <Button style={styles.navBtn} variant='link' onClick={(e) => handleNav(e)}>Projects</Button>
           <Button style={styles.navBtn} variant='link' onClick={(e) => handleNav(e)}>About</Button>
         </div>
-        <Flex style={contentStr === 'Projects' ? styles.headingProjects : styles.heading} >
+        <Flex style={handleStyle(contentStr)} >
           {content}
         </Flex>
        <SocialMedias />
@@ -47,13 +60,17 @@ export default App;
 
 
 const styles = {
-  heading: {
+  homeHeading: {
     justifyContent: "center",
     alignItems: "center",
     width: "100vw",
     height: "100vh",
   },
-  headingProjects: {
+  aboutHeading: {
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  projectHeading: {
     justifyContent: "center",
     alignItems: "center",
   },

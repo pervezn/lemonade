@@ -14,7 +14,8 @@ const data = [
         "websiteLink": "https://pervezn.github.io/lemonade/",
         "blogLink": "",
         "pills": ['React', "Chakra UI", "Fly.io", "Spotify API"]
-    }
+    },
+    
 ]
 
 
