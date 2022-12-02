@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/lemonade/static/css/main.073c9b0a.css",
-    "main.js": "/lemonade/static/js/main.e34f206f.js",
+    "main.js": "/lemonade/static/js/main.2c46a335.js",
     "static/js/787.82487b8b.chunk.js": "/lemonade/static/js/787.82487b8b.chunk.js",
     "static/media/nida.jpg": "/lemonade/static/media/nida.0c2689362fe96e29e37e.jpg",
     "index.html": "/lemonade/index.html",
     "main.073c9b0a.css.map": "/lemonade/static/css/main.073c9b0a.css.map",
-    "main.e34f206f.js.map": "/lemonade/static/js/main.e34f206f.js.map",
+    "main.2c46a335.js.map": "/lemonade/static/js/main.2c46a335.js.map",
     "787.82487b8b.chunk.js.map": "/lemonade/static/js/787.82487b8b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.e34f206f.js"
+    "static/js/main.2c46a335.js"
   ]
 }
