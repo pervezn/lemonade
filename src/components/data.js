@@ -8,13 +8,22 @@ const data = [
         "pills": ['React', "Chakra UI", "Github Actions", "Github Pages"]
     },
     {
-        "projectName": "SpotifyBANG",
-        "description": "but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "githubLink": "",
-        "websiteLink": "https://pervezn.github.io/lemonade/",
+        "projectName": "MusicMe",
+        "description": "Does waiting for Spotify Wrapped every year feel too long? Check out your current music stats like top artists and songs as well explore more artists and songs on MusicMe!",
+        "githubLink": "https://github.com/pervezn/musicME",
+        "websiteLink": "https://music-me.vercel.app/",
         "blogLink": "",
-        "pills": ['React', "Chakra UI", "Fly.io", "Spotify API"]
+        "pills": ['React', "Tailwind CSS", "Vercel", "Spotify API"]
     },
+    {
+        "projectName": "Track Trove",
+        "description": "Can't find the perfect playlist? Leverage Chat GPT to curate the perfect playlist for your listening pleasure!",
+        "githubLink": "https://github.com/pervezn/TrackTrove",
+        "websiteLink": "https://vercel.com/pervezns-projects/track-trove",
+        "blogLink": "",
+        "pills": ['React', "Tailwind CSS", "Vercel", "Spotify API", "Shadcn/ui", "Vercel AI SDK"]
+    },
+
     
 ]
 

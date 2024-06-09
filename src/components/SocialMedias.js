@@ -9,7 +9,7 @@ const SocialMedias = () => {
             <hr/>
             <a href="https://www.linkedin.com/in/nida-pervez/"><FaLinkedin style={styles.icons}/></a>
             <a href="https://github.com/pervezn"><FaGithub style={styles.icons} /></a>
-            <a href="https://www.instagram.com/lemonade.rasta/"><FaInstagram  style={styles.icons}/></a>
+            <a href="https://www.instagram.com/lemonade.raasta/"><FaInstagram  style={styles.icons}/></a>
             <hr/>
         </Flex>
     )

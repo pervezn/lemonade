@@ -1,5 +1,5 @@
 import './App.css';
-import {ChakraProvider, Button, Flex } from '@chakra-ui/react'
+import {ChakraProvider, Button, Flex, Box } from '@chakra-ui/react'
 import CardContainer from './components/Card'
 import React, {useState} from 'react';
 import TypeWriter from './components/TypeWriter';
@@ -11,7 +11,6 @@ function App() {
   const [content, setContent] = useState(<TypeWriter />)
 
   function handleNav(e) {
-    // console.log("here")
     let target = e.target.innerText 
     setContentStr(target) 
     console.log(target)
@@ -47,10 +46,12 @@ function App() {
           <Button style={styles.navBtn} variant='link' onClick={(e) => handleNav(e)}>Projects</Button>
           <Button style={styles.navBtn} variant='link' onClick={(e) => handleNav(e)}>About</Button>
         </div>
-        <Flex style={handleStyle(contentStr)} >
+        <Flex style={handleStyle(contentStr)} direction={"column"}>
+          <Box>
           {content}
+          </Box>
+            <SocialMedias />
         </Flex>
-       <SocialMedias />
       </div>
     </ChakraProvider>
   );
@@ -62,7 +63,7 @@ export default App;
 const styles = {
   homeHeading: {
     justifyContent: "center",
-    alignItems: "center",
+    alignItems: "center", 
     width: "100vw",
     height: "100vh",
   },

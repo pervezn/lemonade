@@ -11,7 +11,7 @@ const Card = ({project}) => {
     const colors = {
         'framework': "#6B9080",
         'tech': "#9D695A",
-        // 2: "#2B2D42",
+        'misc': "#2B2D42",
         'environment': "#B5B8BA"
     }
     const pillMap = {
@@ -20,7 +20,13 @@ const Card = ({project}) => {
       'Github Actions': 'environment',
       'Github Pages': 'environment',
       'Fly.io': 'environment',
+      'Vercel': 'environment',
       'Spotify API': 'environment',
+      'NextJS': 'tech',
+      'Tailwind CSS': 'framework',
+      'Shadcn/ui': 'framework',
+      'Vercel AI SDK': 'misc'
+
     }
     
 
